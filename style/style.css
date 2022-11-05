@@ -34,10 +34,11 @@ li {
 .header__ul {
     display: flex;
     justify-content: center;
+    gap: 53px;
+    margin: 47px 0 47px;
 }
 
 .header__li {
-    margin: 47px 53px;
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
@@ -51,9 +52,6 @@ li {
     background-size: cover;
     background-position: center;
     padding: 138px 0 180px;
-}
-
-.preview__main {
     text-align: center;
 }
 
@@ -78,6 +76,7 @@ li {
     border: none;
 }
 
+
 .background{
     background-color: rgba(26, 110, 136, 0.71);
     padding: 130px 0 134px;
@@ -89,4 +88,71 @@ li {
     color: #FFFFFF;
     max-width: 726px;
     margin: 0 auto;
+}
+
+.width{
+    max-width: 1440px;
+}
+.description__text{
+font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+color: #000000;
+margin-top: 221px;
+margin-bottom: 216px;
+display: inline-block;
+width: 696px;
+}
+
+.description__scuare{
+    position: relative;
+}
+
+.box{
+    min-width: 170px;
+    height: 121px;
+    background-color: aqua;
+    position: absolute;
+}
+
+.box:nth-child(1){
+    position: absolute;
+    left: 0;
+    top: 121px
+}
+.box:nth-child(2){
+    position: absolute;
+    right: 0;
+    top: 121px
+}
+
+.box:nth-child(3){
+    position: absolute;
+    left: 0;
+    top: 366px
+}
+.second{
+    position: relative;
+}
+
+.second::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.second::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
